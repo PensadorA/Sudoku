@@ -23,29 +23,23 @@ public class DialogGamer extends JDialog {
         JPanel buttonsPanel = new JPanel(new GridLayout(3, 1));
 
         JButton facilButton = new JButton("Fácil");
-        facilButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                mode = 2;
-                dispose();
-            }
+        facilButton.addActionListener(e -> {
+            mode = 2;
+            dispose();
         });
         buttonsPanel.add(facilButton);
 
         JButton medioButton = new JButton("Médio");
-        medioButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                mode = 30;
-                dispose();
-            }
+        medioButton.addActionListener(e -> {
+            mode = 30;
+            dispose();
         });
         buttonsPanel.add(medioButton);
 
         JButton dificilButton = new JButton("Difícil");
-        dificilButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                mode = 40;
-                dispose();
-            }
+        dificilButton.addActionListener(e -> {
+            mode = 40;
+            dispose();
         });
         buttonsPanel.add(dificilButton);
 

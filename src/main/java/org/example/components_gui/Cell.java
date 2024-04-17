@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Cell extends JPanel {
-    private JLabel jLabel;
+    private final JLabel jLabel;
     private boolean isVisible = true;
 
     public Cell(){
@@ -28,9 +28,6 @@ public class Cell extends JPanel {
         jLabel.setFont(new Font("Arial", Font.PLAIN, 25));
         jLabel.setText(text);
 
-    }
-    public String getNumber(){
-        return jLabel.getText();
     }
 }
 

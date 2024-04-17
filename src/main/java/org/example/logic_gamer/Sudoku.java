@@ -17,8 +17,8 @@ public class Sudoku
         this.K = K;
 
         // Compute square root of N
-        Double SRNd = Math.sqrt(N);
-        SRN = SRNd.intValue();
+        double SRNd = Math.sqrt(N);
+        SRN = (int) SRNd;
 
         mat = new int[N][N];
     }
@@ -128,7 +128,7 @@ public class Sudoku
         }
         else if (i < N-SRN)
         {
-            if (j==(int)(i/SRN)*SRN)
+            if (j== (i/SRN) *SRN)
                 j = j + SRN;
         }
         else
